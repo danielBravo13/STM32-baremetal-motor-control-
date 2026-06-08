@@ -11,6 +11,8 @@ A Bare-metal STM32F401RE dual DC motor controller using TIM2 PWM generation and 
 - Oscilloscope-verified PWM output
 - Modular GPIO and timer initialization
 
+![Features](images/IMG_1578.jpg)]
+
 ## Hardware
 
 ### Microcontroller
@@ -35,6 +37,8 @@ A Bare-metal STM32F401RE dual DC motor controller using TIM2 PWM generation and 
 ```
 
 ## PWM Verification
+
+![PWM Verification](images/IMG_1592.jpg)
 Measured:
 - Frequency: 1 kHz
 - Period: 1ms
