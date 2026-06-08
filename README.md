@@ -23,3 +23,19 @@ A Bare-metal STM32F401RE dual DC motor controller using TIM2 PWM generation and 
 - Oscilloscope
 - Laboratory DC Power Supply
 - Digital Multimeter
+
+## PWM Generation
+-TIM2 is configured to generate a 1 kHz PWM signal used to control motor speed.
+```c
+	TIM2->PSC = (SystemCoreClock / 1000000U) - 1U;
+	TIM2->ARR = 1000-1;
+
+	TIM2->CCR1 = 500;
+	TIM2->CCR2 = 500;
+```
+
+## PWM Verification
+Measured:
+- Frequency: 1 kHz
+- Period: 1ms
+- Duty Cycle: 50%
